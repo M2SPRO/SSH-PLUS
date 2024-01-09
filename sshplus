@@ -1,0 +1,7 @@
+#!/bin/bash
+apt update 
+apt upgrade -y
+apt install curl -y
+wget https://github.com/M2SPRO/SSH-PLUS/raw/main/$(uname -m)/sshplus
+chmod +x sshplus
+./sshplus
